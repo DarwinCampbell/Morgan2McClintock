@@ -1,0 +1,16 @@
+# seqname source feature start end score strand frame attributes
+ZmChr1 IBM2_2008_Neighbors centromere 439.30 439.30 . . . ID=
+ZmChr1 IBM2_2008_Neighbors locus 882.70 882.70 . . . Name=tb1;color=darkgreen
+ZmChr2 IBM2_2008_Neighbors centromere 344.80 344.80 . . . ID=
+ZmChr2 IBM2_2008_Neighbors locus 46.98 46.98 . . . Name=lg1;color=green
+ZmChr3 IBM2_2008_Neighbors centromere 254.00 254.00 . . . ID=
+ZmChr4 IBM2_2008_Neighbors centromere 298.90 298.90 . . . ID=
+ZmChr5 IBM2_2008_Neighbors centromere 313.34 313.34 . . . ID=
+ZmChr6 IBM2_2008_Neighbors centromere 98.00 98.00 . . . ID=
+ZmChr6 IBM2_2008_Neighbors locus 536.50 536.50 . . . Name=tie-dyed1;color=red
+ZmChr7 IBM2_2008_Neighbors centromere 184.10 184.10 . . . ID=
+ZmChr8 IBM2_2008_Neighbors centromere 207.90 207.90 . . . ID=
+ZmChr9 IBM2_2008_Neighbors centromere 224.70 224.70 . . . ID=
+ZmChr9 IBM2_2008_Neighbors locus 90.10 90.10 . . . Name=bronze1;color=chocolate
+ZmChr9 IBM2_2008_Neighbors locus 191.70 191.70 . . . Name=waxy1;color=orange
+ZmChr10 IBM2_2008_Neighbors centromere 191.40 191.40 . . . ID=

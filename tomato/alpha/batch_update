@@ -1,0 +1,5 @@
+cp index.php index.phps
+cp download.php download.phps
+cp data.php data.phps
+rm cmrn.tar
+tar -cvf cmrn.tar * > /dev/null

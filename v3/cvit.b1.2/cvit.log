@@ -1,0 +1,2229 @@
+
+
+8-4-2011 11:30:16
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+8-4-2011 12:58:43
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+8-4-2011 12:58:44
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+8-4-2011 13:18:57
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+8-4-2011 13:18:58
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+8-4-2011 13:26:45
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+Draw label K1S2 , pileup: 0Draw label T1-7(4742)(1) , pileup: 0Draw label T1-4h(1) , pileup: 0Draw label T1-5(5045)(1) , pileup: 1Draw label T1-2(7309)(1) , pileup: 0Draw label T1-3(5883)(1) , pileup: 0Draw label T1-5(058-2)(1) , pileup: 1Draw label T1-4(002-19)(1) , pileup: 0Draw label T1-4(5688)(1) , pileup: 1Draw label Inv1f(L) , pileup: 0
+
+8-4-2011 13:26:46
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+Draw label K1S2 , pileup: 0Draw label T1-7(4742)(1) , pileup: 1Draw label T1-4h(1) , pileup: 2Draw label T1-5(5045)(1) , pileup: 3Draw label T1-2(7309)(1) , pileup: 4Draw label T1-3(5883)(1) , pileup: 5Draw label T1-5(058-2)(1) , pileup: 6Draw label T1-4(002-19)(1) , pileup: 7Draw label T1-4(5688)(1) , pileup: 8Draw label Inv1f(L) , pileup: 9
+
+8-4-2011 13:27:28
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+Draw label K1S2 , pileup: 0Draw label T1-7(4742)(1) , pileup: 0Draw label T1-4h(1) , pileup: 0Draw label T1-5(5045)(1) , pileup: 1Draw label T1-2(7309)(1) , pileup: 0Draw label T1-3(5883)(1) , pileup: 0Draw label T1-5(058-2)(1) , pileup: 1Draw label T1-4(002-19)(1) , pileup: 0Draw label T1-4(5688)(1) , pileup: 1Draw label Inv1f(L) , pileup: 0
+
+8-4-2011 13:27:28
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+Draw label K1S2 , pileup: 0Draw label T1-7(4742)(1) , pileup: 1Draw label T1-4h(1) , pileup: 2Draw label T1-5(5045)(1) , pileup: 3Draw label T1-2(7309)(1) , pileup: 4Draw label T1-3(5883)(1) , pileup: 5Draw label T1-5(058-2)(1) , pileup: 6Draw label T1-4(002-19)(1) , pileup: 7Draw label T1-4(5688)(1) , pileup: 8Draw label Inv1f(L) , pileup: 9
+
+8-4-2011 13:28:23
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+Draw label K1S2 , pileup: 0
+...draw
+Draw label T1-7(4742)(1) , pileup: 0
+...draw
+Draw label T1-4h(1) , pileup: 0
+...draw
+Draw label T1-5(5045)(1) , pileup: 1
+Draw label T1-2(7309)(1) , pileup: 0
+...draw
+Draw label T1-3(5883)(1) , pileup: 0
+...draw
+Draw label T1-5(058-2)(1) , pileup: 1
+Draw label T1-4(002-19)(1) , pileup: 0
+...draw
+Draw label T1-4(5688)(1) , pileup: 1
+Draw label Inv1f(L) , pileup: 0
+...draw
+
+
+8-4-2011 13:28:23
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+Draw label K1S2 , pileup: 0
+...draw
+Draw label T1-7(4742)(1) , pileup: 1
+Draw label T1-4h(1) , pileup: 2
+Draw label T1-5(5045)(1) , pileup: 3
+Draw label T1-2(7309)(1) , pileup: 4
+Draw label T1-3(5883)(1) , pileup: 5
+Draw label T1-5(058-2)(1) , pileup: 6
+Draw label T1-4(002-19)(1) , pileup: 7
+Draw label T1-4(5688)(1) , pileup: 8
+Draw label Inv1f(L) , pileup: 9
+
+
+8-4-2011 13:32:58
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+Draw label K1S2 , pileup: 0
+...draw
+Draw label T1-7(4742)(1) , pileup: 0
+...draw
+Draw label T1-4h(1) , pileup: 0
+...draw
+Draw label T1-5(5045)(1) , pileup: 1
+Draw label T1-2(7309)(1) , pileup: 0
+...draw
+Draw label T1-3(5883)(1) , pileup: 0
+...draw
+Draw label T1-5(058-2)(1) , pileup: 1
+Draw label T1-4(002-19)(1) , pileup: 0
+...draw
+Draw label T1-4(5688)(1) , pileup: 1
+Draw label Inv1f(L) , pileup: 0
+...draw
+
+
+8-4-2011 13:32:58
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+Draw label K1S2 , pileup: 0
+...draw
+Draw label T1-7(4742)(1) , pileup: 1
+Draw label T1-4h(1) , pileup: 2
+Draw label T1-5(5045)(1) , pileup: 3
+Draw label T1-2(7309)(1) , pileup: 4
+Draw label T1-3(5883)(1) , pileup: 5
+Draw label T1-5(058-2)(1) , pileup: 6
+Draw label T1-4(002-19)(1) , pileup: 7
+Draw label T1-4(5688)(1) , pileup: 8
+Draw label Inv1f(L) , pileup: 9
+
+
+8-4-2011 13:34:3
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+8-4-2011 13:34:4
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+8-4-2011 13:34:22
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+8-4-2011 13:34:23
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+8-4-2011 13:35:42
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+8-4-2011 13:35:43
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+8-4-2011 13:36:28
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+8-4-2011 13:36:29
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+10-4-2011 12:42:30
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+10-4-2011 12:42:31
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+10-4-2011 12:42:45
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+10-4-2011 12:42:46
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+10-4-2011 12:43:8
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+10-4-2011 12:43:9
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 10:19:41
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 10:19:42
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 10:20:46
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 10:20:47
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 10:46:18
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 10:46:19
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 10:55:4
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 10:55:5
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 10:58:38
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 10:58:39
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 11:10:5
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 11:10:5
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 11:14:55
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 11:14:56
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 11:18:10
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 11:18:11
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 11:35:10
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+11-4-2011 11:35:11
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+11-4-2011 14:22:28
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 14:22:29
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+11-4-2011 14:29:47
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+11-4-2011 14:29:48
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+13-4-2011 12:42:20
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+13-4-2011 12:42:21
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+13-4-2011 12:47:15
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+13-4-2011 12:47:16
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+14-4-2011 12:19:20
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+14-4-2011 12:19:22
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+18-4-2011 9:54:37
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+18-4-2011 9:54:38
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+18-4-2011 9:55:34
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+18-4-2011 9:55:35
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+18-4-2011 11:8:10
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+18-4-2011 11:8:11
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+18-4-2011 11:11:50
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+18-4-2011 11:11:51
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+18-4-2011 11:15:3
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_input.gff
+
+
+18-4-2011 11:15:4
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_output.gff
+
+
+1-7-2011 12:23:11
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+1-7-2011 12:23:11
+
+WARNING:unable to find GFF file ../temp/genetic_input.gff
+
+Unable to open ../temp/genetic_input.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+1-7-2011 12:23:11
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+1-7-2011 12:23:11
+
+WARNING:unable to find GFF file ../temp/cytological_output.gff
+
+Unable to open ../temp/cytological_output.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+1-7-2011 12:25:29
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+1-7-2011 12:25:29
+
+WARNING:unable to find GFF file ../temp/cytological_output.gff
+
+Unable to open ../temp/cytological_output.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+1-7-2011 12:36:2
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+1-7-2011 12:37:17
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+1-7-2011 12:37:17
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+1-7-2011 12:37:41
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+1-7-2011 12:37:42
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+1-7-2011 12:40:7
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+1-7-2011 12:40:8
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+1-7-2011 12:40:8
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/rn_data.gff
+No range of data to display
+
+1-7-2011 12:40:8
+No value in record 26No value in record 31No value in record 33No value in record 34No value in record 36No value in record 37No value in record 38No value in record 39No value in record 40No value in record 43No value in record 44No value in record 45No value in record 46No value in record 48No value in record 49No value in record 51No value in record 53No value in record 56No value in record 57No value in record 58No value in record 61No value in record 62No value in record 65No value in record 70No value in record 72No value in record 77No value in record 78No value in record 88No value in record 94No value in record 1
+
+18-7-2011 7:13:21
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+18-7-2011 7:13:21
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+18-7-2011 7:13:22
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/rn_data.gff
+No range of data to display
+
+18-7-2011 7:13:22
+No value in record 1No value in record 14No value in record 28No value in record 41No value in record 55No value in record 60No value in record 66No value in record 68No value in record 70No value in record 71No value in record 77No value in record 80No value in record 82No value in record 84No value in record 87No value in record 93No value in record 95No value in record 96No value in record 97No value in record 98No value in record 99No value in record 100No value in record 101No value in record 102No value in record 104No value in record 105No value in record 106No value in record 107No value in record 108No value in record 109No value in record 110No value in record 111No value in record 112No value in record 115No value in record 116No value in record 120No value in record 121No value in record 123No value in record 125No value in record 127No value in record 130No value in record 131No value in record 133No value in record 134No value in record 138No value in record 142No value in record 145No value in record 146No value in record 149No value in record 153No value in record 157No value in record 160No value in record 164No value in record 168No value in record 171No value in record 175No value in record 179No value in record 183No value in record 186No value in record 188No value in record 190No value in record 194No value in record 197No value in record 201No value in record 205No value in record 207No value in record 208No value in record 212No value in record 216No value in record 220No value in record 223No value in record 227No value in record 231No value in record 234No value in record 238No value in record 242No value in record 1
+
+25-7-2011 21:41:33
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/genetic_input.gff
+
+
+25-7-2011 21:41:33
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/cytological_output.gff
+
+
+25-7-2011 21:41:34
+
+
+
+-----------------START----------------
+
+Read gff file ../temp/rn_data.gff
+No range of data to display
+
+25-7-2011 21:41:34
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+2-1-2019 17:14:34
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+2-1-2019 17:15:17
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+2-1-2019 17:16:58
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 17:34:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 18:1:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 18:4:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 18:5:12
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 18:5:25
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 18:11:30
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 18:11:31
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 18:11:31
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 18:11:31
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 18:15:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 18:15:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 18:15:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 18:15:37
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 18:16:49
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 18:16:49
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 18:16:50
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 18:16:50
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 18:16:55
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 18:16:55
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 18:16:55
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 18:16:55
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 18:17:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 18:17:2
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 18:17:2
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 18:17:2
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:24:34
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 19:24:35
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 19:24:35
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:24:35
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:29:23
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 19:29:23
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 19:29:23
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:29:23
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:29:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:29:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:29:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:29:32
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:29:42
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:29:42
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:29:43
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:29:43
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:29:58
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 19:29:59
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 19:29:59
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:29:59
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:30:58
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 19:30:59
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 19:30:59
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:30:59
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:31:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input.gff
+
+
+3-1-2019 19:31:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output.gff
+
+
+3-1-2019 19:31:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:31:11
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:32:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:32:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:32:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:32:1
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:41:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:41:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:41:1
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:41:1
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:45:55
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:45:56
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:45:56
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:45:56
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:46:30
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:46:30
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:46:30
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:46:30
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:47:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:47:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:47:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:47:11
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:48:10
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:48:10
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:48:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:48:11
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:49:48
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:49:48
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:49:48
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:49:48
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:50:50
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:50:50
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:50:50
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:50:50
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:50:55
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:50:55
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:50:55
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:50:55
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:52:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:52:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:52:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:52:37
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:54:13
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:54:13
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:54:13
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:54:13
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:56:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:56:32
+
+WARNING:unable to find GFF file ../../temp/genetic_input.gff
+
+Unable to open ../../temp/genetic_input.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 19:56:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:56:32
+
+WARNING:unable to find GFF file ../../temp/cytological_output.gff
+
+Unable to open ../../temp/cytological_output.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 19:56:32
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+
+
+3-1-2019 19:56:32
+
+WARNING:unable to find GFF file ../../temp/rn_data.gff
+
+Unable to open ../../temp/rn_data.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 19:57:6
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:57:6
+
+WARNING:unable to find GFF file ../../temp/genetic_input.gff
+
+Unable to open ../../temp/genetic_input.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 19:57:6
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:57:6
+
+WARNING:unable to find GFF file ../../temp/cytological_output.gff
+
+Unable to open ../../temp/cytological_output.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 19:57:6
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+
+
+3-1-2019 19:57:6
+
+WARNING:unable to find GFF file ../../temp/rn_data.gff
+
+Unable to open ../../temp/rn_data.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 19:57:21
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:57:21
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:57:21
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:57:21
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 19:58:3
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 19:58:3
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 19:58:4
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+No range of data to display
+
+3-1-2019 19:58:4
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 20:9:22
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input.gff
+
+
+3-1-2019 20:9:22
+
+WARNING:unable to find GFF file ../../temp/genetic_input.gff
+
+Unable to open ../../temp/genetic_input.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 20:9:22
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output.gff
+
+
+3-1-2019 20:9:22
+
+WARNING:unable to find GFF file ../../temp/cytological_output.gff
+
+Unable to open ../../temp/cytological_output.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 20:9:22
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data.gff
+
+
+3-1-2019 20:9:22
+
+WARNING:unable to find GFF file ../../temp/rn_data.gff
+
+Unable to open ../../temp/rn_data.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 20:10:6
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e6be4ae870.gff
+
+
+3-1-2019 20:10:6
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e6be4ae870.gff
+
+
+3-1-2019 20:10:7
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e6be4ae870.gff
+No range of data to display
+
+3-1-2019 20:10:7
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 20:11:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e6c55f2980.gff
+
+
+3-1-2019 20:11:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e6c55f2980.gff
+
+
+3-1-2019 20:11:11
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e6c55f2980.gff
+No range of data to display
+
+3-1-2019 20:11:11
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 20:17:31
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e6be4ae870.gff
+
+
+3-1-2019 20:17:31
+
+WARNING:unable to find GFF file ../../temp/genetic_input_5c2e6be4ae870.gff
+
+Unable to open ../../temp/genetic_input_5c2e6be4ae870.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 20:17:31
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e6be4ae870.gff
+
+
+3-1-2019 20:17:31
+
+WARNING:unable to find GFF file ../../temp/cytological_output_5c2e6be4ae870.gff
+
+Unable to open ../../temp/cytological_output_5c2e6be4ae870.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 20:17:31
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e6be4ae870.gff
+
+
+3-1-2019 20:17:31
+
+WARNING:unable to find GFF file ../../temp/rn_data_5c2e6be4ae870.gff
+
+Unable to open ../../temp/rn_data_5c2e6be4ae870.gff because: No such file or directory
+No chromosomes were found. CViT can't continue
+
+3-1-2019 20:22:34
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e6f02ba080.gff
+
+
+3-1-2019 20:22:35
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e6f02ba080.gff
+
+
+3-1-2019 20:22:35
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e6f02ba080.gff
+No range of data to display
+
+3-1-2019 20:22:35
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 20:25:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input_5c2e6fbf33157.gff
+
+
+3-1-2019 20:25:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output_5c2e6fbf33157.gff
+
+
+3-1-2019 20:25:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e6fbf33157.gff
+No range of data to display
+
+3-1-2019 20:25:37
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 20:26:20
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e6fd121508.gff
+
+
+3-1-2019 20:26:20
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e6fd121508.gff
+
+
+3-1-2019 20:26:20
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e6fd121508.gff
+No range of data to display
+
+3-1-2019 20:26:20
+No value in record 36No value in record 45No value in record 50No value in record 53No value in record 54No value in record 60No value in record 63No value in record 67No value in record 71No value in record 75No value in record 76No value in record 78No value in record 81No value in record 83No value in record 84No value in record 85No value in record 86No value in record 88No value in record 89No value in record 90No value in record 91No value in record 93No value in record 94No value in record 95No value in record 97No value in record 98No value in record 100No value in record 101No value in record 103No value in record 104No value in record 105No value in record 106No value in record 110No value in record 114No value in record 116No value in record 119No value in record 122No value in record 126No value in record 129No value in record 130No value in record 135No value in record 137No value in record 142No value in record 143No value in record 157No value in record 158No value in record 1
+
+3-1-2019 20:27:9
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e7014e7359.gff
+
+
+3-1-2019 20:27:9
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e7014e7359.gff
+
+
+3-1-2019 20:27:10
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e7014e7359.gff
+No range of data to display
+
+3-1-2019 20:27:10
+No value in record 27No value in record 32No value in record 35No value in record 36No value in record 37No value in record 38No value in record 39No value in record 40No value in record 41No value in record 42No value in record 43No value in record 44No value in record 46No value in record 47No value in record 48No value in record 49No value in record 50No value in record 51No value in record 52No value in record 53No value in record 54No value in record 55No value in record 56No value in record 58No value in record 61No value in record 65No value in record 68No value in record 72No value in record 77No value in record 86No value in record 87No value in record 89No value in record 100No value in record 103No value in record 106No value in record 111No value in record 125No value in record 1
+
+3-1-2019 20:29:9
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_input_5c2e709078bad.gff
+
+
+3-1-2019 20:29:9
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_output_5c2e709078bad.gff
+
+
+3-1-2019 20:29:9
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e709078bad.gff
+No range of data to display
+
+3-1-2019 20:29:9
+No value in record 27No value in record 32No value in record 35No value in record 36No value in record 37No value in record 38No value in record 39No value in record 40No value in record 41No value in record 42No value in record 43No value in record 44No value in record 46No value in record 47No value in record 48No value in record 49No value in record 50No value in record 51No value in record 52No value in record 53No value in record 54No value in record 55No value in record 56No value in record 58No value in record 61No value in record 65No value in record 68No value in record 72No value in record 77No value in record 86No value in record 87No value in record 89No value in record 100No value in record 103No value in record 106No value in record 111No value in record 125No value in record 1
+
+3-1-2019 20:30:56
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e70d995a2f.gff
+
+
+3-1-2019 20:30:56
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e70d995a2f.gff
+
+
+3-1-2019 20:30:56
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e70d995a2f.gff
+No range of data to display
+
+3-1-2019 20:30:56
+No value in record 27No value in record 32No value in record 35No value in record 36No value in record 37No value in record 38No value in record 39No value in record 40No value in record 41No value in record 42No value in record 43No value in record 44No value in record 46No value in record 47No value in record 48No value in record 49No value in record 50No value in record 51No value in record 52No value in record 53No value in record 54No value in record 55No value in record 56No value in record 58No value in record 61No value in record 65No value in record 68No value in record 72No value in record 77No value in record 86No value in record 87No value in record 89No value in record 100No value in record 103No value in record 106No value in record 111No value in record 125No value in record 1
+
+3-1-2019 21:1:34
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e782766c81.gff
+
+
+3-1-2019 21:1:35
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e782766c81.gff
+
+
+3-1-2019 21:1:35
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e782766c81.gff
+No range of data to display
+
+3-1-2019 21:1:35
+No value in record 1No value in record 14No value in record 28No value in record 41No value in record 55No value in record 60No value in record 66No value in record 68No value in record 70No value in record 71No value in record 77No value in record 80No value in record 82No value in record 84No value in record 87No value in record 93No value in record 95No value in record 96No value in record 97No value in record 98No value in record 99No value in record 100No value in record 101No value in record 102No value in record 104No value in record 105No value in record 106No value in record 107No value in record 108No value in record 109No value in record 110No value in record 111No value in record 112No value in record 115No value in record 116No value in record 120No value in record 121No value in record 123No value in record 125No value in record 127No value in record 130No value in record 131No value in record 133No value in record 134No value in record 138No value in record 142No value in record 145No value in record 146No value in record 149No value in record 153No value in record 157No value in record 160No value in record 164No value in record 168No value in record 171No value in record 175No value in record 179No value in record 183No value in record 186No value in record 188No value in record 190No value in record 194No value in record 197No value in record 201No value in record 205No value in record 207No value in record 208No value in record 212No value in record 216No value in record 220No value in record 223No value in record 227No value in record 231No value in record 234No value in record 238No value in record 242No value in record 1
+
+3-1-2019 21:2:26
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e782766c81.gff
+
+
+3-1-2019 21:2:26
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e782766c81.gff
+
+
+3-1-2019 21:2:26
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e782766c81.gff
+No range of data to display
+
+3-1-2019 21:2:26
+No value in record 1No value in record 14No value in record 28No value in record 41No value in record 55No value in record 60No value in record 66No value in record 68No value in record 70No value in record 71No value in record 77No value in record 80No value in record 82No value in record 84No value in record 87No value in record 93No value in record 95No value in record 96No value in record 97No value in record 98No value in record 99No value in record 100No value in record 101No value in record 102No value in record 104No value in record 105No value in record 106No value in record 107No value in record 108No value in record 109No value in record 110No value in record 111No value in record 112No value in record 115No value in record 116No value in record 120No value in record 121No value in record 123No value in record 125No value in record 127No value in record 130No value in record 131No value in record 133No value in record 134No value in record 138No value in record 142No value in record 145No value in record 146No value in record 149No value in record 153No value in record 157No value in record 160No value in record 164No value in record 168No value in record 171No value in record 175No value in record 179No value in record 183No value in record 186No value in record 188No value in record 190No value in record 194No value in record 197No value in record 201No value in record 205No value in record 207No value in record 208No value in record 212No value in record 216No value in record 220No value in record 223No value in record 227No value in record 231No value in record 234No value in record 238No value in record 242No value in record 1
+
+3-1-2019 21:39:36
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e811603d8a.gff
+
+
+3-1-2019 21:39:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e811603d8a.gff
+
+
+3-1-2019 21:39:37
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e811603d8a.gff
+No range of data to display
+
+3-1-2019 21:39:37
+No value in record 1No value in record 14No value in record 28No value in record 41No value in record 55No value in record 60No value in record 66No value in record 68No value in record 70No value in record 71No value in record 77No value in record 80No value in record 82No value in record 84No value in record 87No value in record 93No value in record 95No value in record 96No value in record 97No value in record 98No value in record 99No value in record 100No value in record 101No value in record 102No value in record 104No value in record 105No value in record 106No value in record 107No value in record 108No value in record 109No value in record 110No value in record 111No value in record 112No value in record 115No value in record 116No value in record 120No value in record 121No value in record 123No value in record 125No value in record 127No value in record 130No value in record 131No value in record 133No value in record 134No value in record 138No value in record 142No value in record 145No value in record 146No value in record 149No value in record 153No value in record 157No value in record 160No value in record 164No value in record 168No value in record 171No value in record 175No value in record 179No value in record 183No value in record 186No value in record 188No value in record 190No value in record 194No value in record 197No value in record 201No value in record 205No value in record 207No value in record 208No value in record 212No value in record 216No value in record 220No value in record 223No value in record 227No value in record 231No value in record 234No value in record 238No value in record 242No value in record 1
+
+3-1-2019 21:40:14
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2e813c9e685.gff
+
+
+3-1-2019 21:40:15
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2e813c9e685.gff
+
+
+3-1-2019 21:40:15
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2e813c9e685.gff
+No range of data to display
+
+3-1-2019 21:40:15
+No value in record 1No value in record 14No value in record 28No value in record 41No value in record 55No value in record 60No value in record 66No value in record 68No value in record 70No value in record 71No value in record 77No value in record 80No value in record 82No value in record 84No value in record 87No value in record 93No value in record 95No value in record 96No value in record 97No value in record 98No value in record 99No value in record 100No value in record 101No value in record 102No value in record 104No value in record 105No value in record 106No value in record 107No value in record 108No value in record 109No value in record 110No value in record 111No value in record 112No value in record 115No value in record 116No value in record 120No value in record 121No value in record 123No value in record 125No value in record 127No value in record 130No value in record 131No value in record 133No value in record 134No value in record 138No value in record 142No value in record 145No value in record 146No value in record 149No value in record 153No value in record 157No value in record 160No value in record 164No value in record 168No value in record 171No value in record 175No value in record 179No value in record 183No value in record 186No value in record 188No value in record 190No value in record 194No value in record 197No value in record 201No value in record 205No value in record 207No value in record 208No value in record 212No value in record 216No value in record 220No value in record 223No value in record 227No value in record 231No value in record 234No value in record 238No value in record 242No value in record 1
+
+4-1-2019 16:55:42
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/genetic_input_5c2f900bce27a.gff
+
+
+4-1-2019 16:55:42
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/cytological_output_5c2f900bce27a.gff
+
+
+4-1-2019 16:55:42
+
+
+
+-----------------START----------------
+
+Read gff file ../../temp/rn_data_5c2f900bce27a.gff
+No range of data to display
+
+4-1-2019 16:55:42
+No value in record 1No value in record 14No value in record 28No value in record 41No value in record 55No value in record 60No value in record 66No value in record 68No value in record 70No value in record 71No value in record 77No value in record 80No value in record 82No value in record 84No value in record 87No value in record 93No value in record 95No value in record 96No value in record 97No value in record 98No value in record 99No value in record 100No value in record 101No value in record 102No value in record 104No value in record 105No value in record 106No value in record 107No value in record 108No value in record 109No value in record 110No value in record 111No value in record 112No value in record 115No value in record 116No value in record 120No value in record 121No value in record 123No value in record 125No value in record 127No value in record 130No value in record 131No value in record 133No value in record 134No value in record 138No value in record 142No value in record 145No value in record 146No value in record 149No value in record 153No value in record 157No value in record 160No value in record 164No value in record 168No value in record 171No value in record 175No value in record 179No value in record 183No value in record 186No value in record 188No value in record 190No value in record 194No value in record 197No value in record 201No value in record 205No value in record 207No value in record 208No value in record 212No value in record 216No value in record 220No value in record 223No value in record 227No value in record 231No value in record 234No value in record 238No value in record 242No value in record 1

@@ -1,0 +1,74 @@
+==============================
+CViT - Chromosome Viewing Tool
+==============================
+
+01/18/11 - Release b1.2
+
+CViT is a Perl script used to quickly generate images that show features on 
+genomic sequence. It is intentionly simplistic and low-tech; there are limitless 
+possibilities for how one might view such data and CViT is optimized for speed
+and ease of use over high-tech features.
+
+Input is one or more files in GFF3 format.
+(see http://www.sequenceontology.org/gff3.shtml)
+One of these files must contain records describing one or more "chromosomes" 
+(which could represent a psuedomolecule, BAC, contig, linkage group, any sort 
+of contiguous stretch of DNA, or even a protein structure). These "chromosomes" 
+are the backbone that the features are placed on.
+
+Output is a PNG image.
+
+CViT can be wrapped in other Perl scripts to extend its capability, or called by 
+web pages to generate on-demand images. For example, BLAST hits can be displayed 
+on a whole-genome view and displayed in a web browser.
+
+Most aspects of the image can be modified without touching the code. See the
+ini file, config/cvit.ini.
+
+
+Requirements:
+-------------
+GD library (http://www.libgd.org)
+
+Perl libraries:
+  GD
+  GD::Arrow
+  GD::Image
+  Config::IniFiles
+  Data::Dumper
+
+
+Files:
+------
+cvit.pl     - the main scripts
+cvit.log    - tracks behavior and errors, also used for debugging
+config/     - contains one or more .ini files
+examples/   - examples of CViT use
+fonts/      - contains truetype fonts
+pkgs/
+   ColorManager.pm - manages colors
+   CvitImage.pm    - holds base image
+   errorlog.pm     - writes to cvit.log
+   FontManager.pm  - manages fonts
+   GlyphManager.pm - draws glyphs onto base image
+rgb.txt     - list of possible colors
+
+See config/cvit.ini and the examples for more information about how to use CViT.
+
+
+Credits:
+--------
+CViT was designed and developed by Ethalinda and Steven Cannon. The icon was 
+designed by Melanie Shaw.
+
+********************************************************************************
+
+Changelog:
+----------
+b1.2   - Added grayscale colors for heatmaps, better error reporting, many bug
+         fixes.
+b1.1   - Truetype font support and better placement of text, features for 
+         cytogentic maps, ruler can run backward
+b1.0.1 - A few minor bug fixes. Added a legend image and file of feature 
+         coordinates.
+b1.0   - Initial SourceForge release

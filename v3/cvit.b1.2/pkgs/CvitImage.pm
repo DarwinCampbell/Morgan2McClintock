@@ -1,0 +1,795 @@
+#!/usr/bin/perl
+
+# File: CvitImage.pm
+
+# Use: Holds the GD::Image instance of the CViT image along with general
+#        drawing attributes (scaling, padding, et cetera) and information
+#        about the chromosomes. 
+#      Draws the rulers and chromosome.
+
+package CvitImage;
+use strict;
+use warnings;
+use GD;
+use GD::Arrow;
+
+use Data::Dumper;  # for debugging
+
+
+#######
+# new()
+
+sub new {
+  my ($self, $clr_mgr, $font_mgr, $ini, $dbg) = @_;
+  
+  $self = {};
+
+  # For colors
+  $self->{clr_mgr} = $clr_mgr;
+
+  # For fonts
+  $self->{font_mgr} = $font_mgr;
+  
+  # The ini file
+  $self->{ini} = $ini;
+  
+  # For debugging
+  $self->{dbg} = $dbg;
+  
+  $self->{im}         = undef;
+  $self->{num_chroms} = undef;
+  $self->{chrbase}    = undef;  # minimum y coord for starting chrom bars
+  $self->{chrnames}   = [];
+  $self->{chrlabels}  = {};
+  $self->{chrstarts}  = [];
+  $self->{chrxloc}    = {};
+  $self->{chryloc}    = {};
+  $self->{chrymax}    = {};
+  
+  $self->{ruler_min}     = int($ini->val('general', 'ruler_min', 0));
+  $self->{ruler_max}     = int($ini->val('general', 'ruler_max', 0));
+  $self->{reverse_ruler} = int($ini->val('general', 'reverse_ruler', 0));;
+
+  $self->{image_padding}       = int($ini->val('general', 'image_padding', 60));
+  $self->{chrom_padding_left}  = int($ini->val('general', 'chrom_padding_left', 60));
+  $self->{chrom_padding_right} = int($ini->val('general', 'chrom_padding_right', 60));
+  
+  $self->{scale_factor}  = $ini->val('general', 'scale_factor', .1);
+  $self->{chrom_spacing} = int($ini->val('general', 'chrom_spacing', 100));
+  $self->{chrom_width}   = int($ini->val('general', 'chrom_width', 5));
+  $self->{chrom_x_start} = int($ini->val('general', 'chrom_x_start', 60));
+  $self->{show_strands}  = int($ini->val('general', 'show_strands', 0));
+  $self->{display_ruler} = $ini->val('general', 'display_ruler', 1);
+  $self->{title}         = $ini->val('general', 'title', 'CViT');
+  $self->{title_height}  = int($ini->val('general', 'title_height', 10));
+  
+  $self->{image_width}   = 0;
+  $self->{image_height}  = 0;
+  
+  # For keeping track of pixel locations of chromosomes
+#  $self->{feature_coords} = {};
+  $self->{feature_coords} = [];
+
+  bless($self);
+  return $self;
+}#new
+
+
+################
+# create_image()
+# Creates the base CViT image with chromosomes and rulers
+
+sub create_image {
+  my ($self, $chromosomes_ref) = @_;
+
+  my @chromosomes = @$chromosomes_ref;
+
+  if (scalar @chromosomes == 0) {
+    # fatal error
+    my $msg = "No chromosomes found in GFF data. ";
+    $msg .= "CViT requires at least one GFF record of type 'chromosome' to ";
+    $msg .= "create an image.";
+    print "\n\nERROR: $msg\n\n";
+    $self->{dbg}->reportError($msg);
+    exit;
+  }
+
+  my $scale_factor        = $self->{scale_factor};
+  my $image_padding       = $self->{image_padding};
+  my $chrom_padding_left  = $self->{chrom_padding_left};
+  my $chrom_padding_right = $self->{chrom_padding_right};
+  my $chrom_spacing       = $self->{chrom_spacing};
+  my $chrom_width         = $self->{chrom_width};
+  my $show_strands        = $self->{show_strands};
+  my $chrom_x_start       = $self->{chrom_x_start};
+  my $title               = $self->{title};
+  my $title_height        = $self->{title_height};
+  my $ini                 = $self->{ini};
+
+  $self->_parse_chromosomes($chromosomes_ref);
+  
+  # Full ruler length:
+  my $rule_len_pixels 
+        = ($self->{ruler_max} - $self->{ruler_min}) * $scale_factor;
+
+  # Get image sizes
+  $self->{image_width} = $self->{num_chroms} * $chrom_spacing
+                       + 2 * $image_padding 
+                       + $chrom_padding_left + $chrom_padding_right
+                       + 2 * $chrom_width;
+  $self->{image_height} = $rule_len_pixels + (2 * $image_padding);
+
+  # Make image object (3rd arg=1 -> use true colors)
+  my $im = new GD::Image($self->{image_width}, $self->{image_height}, 1);
+  die "Unable to create image of size " 
+      . $self->{image_width} . " X " 
+      . $self->{image_height} 
+      . "\n" 
+      if (!$im);
+
+  # Create colors for GD. Colors are indexed from 0; order matters.
+  $self->{clr_mgr}->assign_colors($im);
+
+  # Set background color
+  $im->filledRectangle(0, 0, $self->{image_width}, $self->{image_height}, 
+                       $self->{clr_mgr}->get_color($im, 'white'));
+
+  my $chrnames  = $self->{chrnames};
+  my $chrstarts = $self->{chrstarts};
+  my $ruler_min = $self->{ruler_min};
+  my $ruler_max = $self->{ruler_max};
+#print "CvitImage.pm: ruler_min: $ruler_min, ruler_max: $ruler_max\n";
+  
+  # calculate where the chromosomes will be located (in pixels)
+  my $chrbase = $image_padding + $title_height;
+  my (%chrxloc, %chryloc, %chrymax);
+  for my $i (0 .. $#chromosomes) {
+    my $chromosome = $chromosomes[$i][0];
+    my $start      = $chromosomes[$i][3];
+    my $end        = $chromosomes[$i][4];
+    
+    if ($chromosome ne $chrnames->[$i]) {
+      #TODO: we have a problem!
+    }
+
+    # x-coord
+    $chrxloc{$chrnames->[$i]} = $chrom_x_start 
+                              + $image_padding + $chrom_padding_left 
+                              + ($chrom_spacing * $i);
+
+    # y-coord
+    $chryloc{$chrnames->[$i]} = $chrbase 
+                              + ($chrstarts->[$i] - $ruler_min) * $scale_factor;
+    # y max
+    $chrymax{$chrnames->[$i]} = $chryloc{$chrnames->[$i]}
+                              + ($end - $start) * $scale_factor;
+  }#each chromosome
+  $self->{chrxloc} = \%chrxloc;
+  $self->{chryloc} = \%chryloc;
+  $self->{chrymax} = \%chrymax;
+  $self->{chrbase} = $chrbase;
+
+  # draw a border rectangle around entire image
+  #  x,y for upper left; then x,y for lower right.
+  my $border_color_name = $ini->val('general', 'border_color', 'gray15');
+  $im->rectangle(0, 0, $self->{image_width}-1, $self->{image_height}-1, 
+                 $self->{clr_mgr}->get_color($im, $border_color_name));
+
+  # get title font information
+  my ($use_ttf, $font_face, $font_size);
+  if ($ini->val('general', 'title_font_face', '') ne ''
+        && $ini->val('general', 'title_font_size', '') ne '') {
+    $use_ttf = 1;
+    my $font_name = _trim($ini->val('general', 'title_font_face'));
+    $font_size = int($ini->val('general', 'title_font_size'));
+    $font_face = $self->{font_mgr}->find_font($font_name);
+    if ($font_face eq '') {
+      # not found, fall back to default font
+      $use_ttf = 0;
+    }
+  }
+  
+  # title location
+  my ($title_x, $title_y);
+  if ($ini->val('general', 'title_location', '') ne '') {
+    my @location = split(/,/, $ini->val('general', 'title_location'));
+    $title_x = int($location[0]);
+    $title_y = int($location[1]);
+  }
+  else {
+    $title_x = 5;
+    $title_y = $title_height;
+  }
+  
+  # title text
+  my $title_color_name = $ini->val('general', 'title_color', 'black');
+  $title =~ s/^['\"](.*)['\"]$/$1/;
+  
+  # draw the title
+  if ($use_ttf) {
+    $im->stringFT($self->{clr_mgr}->get_color($im, $title_color_name),
+                  $font_face, 
+                  $font_size,
+                  0,   # angle 
+                  $title_x,
+                  $title_y,
+                  $title);
+  }
+  else {
+    $im->string($self->{font_mgr}->get_font(1), 
+                $title_x, 
+                $title_y, 
+                $title, 
+                $self->{clr_mgr}->get_color($im, $title_color_name));
+  }
+                
+  # Set the new image in this object
+  $self->{im} = $im;
+
+  # Show the ruler
+  if ($self->{display_ruler} ne '0') {
+    $self->_draw_ruler();
+  }#display ruler
+
+  $self->_draw_chromosomes($chromosomes_ref);
+  
+  return $im;
+}#create_image
+
+
+####################
+# known_chromosome()
+
+sub known_chromosome {
+  my ($self, $chromosome) = @_;
+  return ($self->{chrlabels}->{$chromosome});
+}#known_chromosome
+
+
+#################
+# reverse_ruler()
+
+sub reverse_ruler {
+  my $self = $_[0];
+  $self->{reverse_ruler} = 1;
+}#reverse_ruler
+
+
+################################################################################
+# accessers (incomplete; not all fields accessible this way)
+
+sub get_chrnames {
+  my $self = $_[0];
+  return $self->{chrnames};
+}#chrnames
+
+sub get_chrxloc {
+  my $self = $_[0];
+  return $self->{chrxloc};
+}#get_chrxloc
+
+sub get_chryloc {
+  my $self = $_[0];
+  return $self->{chryloc};
+}#get_chryloc
+
+sub get_chrymax {
+  my $self = $_[0];
+  return $self->{chrymax};
+}#get_chryloc
+
+sub get_image {
+  my $self = $_[0];
+  return $self->{im};
+}#get_image
+
+sub get_image_width {
+  my $self = $_[0];
+  return $self->{image_width};
+}#get_image_width
+
+sub get_image_height {
+  my $self = $_[0];
+  return $self->{image_height};
+}#get_image_height
+
+sub get_ruler_min {
+  my $self = $_[0];
+  return $self->{ruler_min};
+}#get_ruler_min
+
+sub get_ruler_max {
+  my $self = $_[0];
+  return $self->{ruler_max};
+}#get_ruler_max
+
+sub set_chrom_x_start {
+  my ($self, $chrom_x_start) = @_;
+  $self->{chrom_x_start} = $chrom_x_start;
+}#set_chrom_x_start
+
+sub set_display_ruler {
+  my ($self, $display_ruler) = @_;
+  $self->{display_ruler} = $display_ruler;
+}#set_display_ruler
+
+sub set_image_padding {
+  my ($self, $image_padding) = @_;
+  $self->{image_padding} = $image_padding;
+}#set_image_padding
+
+sub set_chrom_padding {
+  my ($self, $chrom_padding_left, $chrom_padding_right) = @_;
+  $self->{$chrom_padding_left} = $chrom_padding_left;
+  $self->{$chrom_padding_right} = $chrom_padding_right;
+}#set_chrom_padding
+
+sub set_ruler_min {
+  my ($self, $ruler_min) = @_;
+  $self->{ruler_min} = $ruler_min;
+}#set_ruler_min
+
+sub set_ruler_max {
+  my ($self, $ruler_max) = @_;
+  $self->{ruler_max} = $ruler_max;
+}#get_ruler_max
+
+
+sub set_title {
+  my ($self, $title) = @_;
+  $self->{title} = $title;
+}#set_title
+
+sub set_title_height {
+  my ($self, $title_height) = @_;
+  $self->{title_height} = $title_height;
+}#set_title_height
+
+
+
+###############################################################################
+#                            INTERNAL FUNCTIONS                               #
+###############################################################################
+
+
+##############
+# add_commas()
+
+sub add_commas {
+   my $input = shift;
+   $input = reverse $input;
+   $input =~ s/(\d\d\d)(?=\d)(?!\d*\.)/$1,/g;
+   return reverse $input;
+}#add_commas
+
+
+#####################
+# _draw_chromosomes()
+
+sub _draw_chromosomes {
+  my ($self, $chromosomes_ref) = @_;
+
+  my @chromosomes = @$chromosomes_ref;
+  
+  my $im            = $self->{im};
+  my $chrxloc       = $self->{chrxloc};
+  my $chryloc       = $self->{chryloc};
+  my $scale_factor  = $self->{scale_factor};
+  my $chrom_width   = $self->{chrom_width};
+  my $show_strands  = $self->{show_strands};
+
+  my $clr_mgr = $self->{clr_mgr};
+  my $ini = $self->{ini};
+
+  my $def_chr_color 
+      = $clr_mgr->get_color($im, $ini->val('general', 'chrom_color', 'gray50'));
+  my $chr_bdr_color 
+      = $clr_mgr->get_color($im, $ini->val('general', 'chrom_border_color', 'gray50'));
+  my $label_color   
+      = $clr_mgr->get_color($im, $ini->val('general', 'chrom_label_color', 'gray50'));
+
+  # get font information
+  my ($use_ttf, $font_face, $font_size);
+  if ($ini->val('general', 'chrom_font_face', '') ne ''
+        && $ini->val('general', 'chrom_font_size', '') ne '') {
+    $use_ttf = 1;
+    $font_size = int($ini->val('general', 'chrom_font_size'));
+    my $font_name = _trim($ini->val('general', 'title_font_face'));
+    $font_face = $self->{font_mgr}->find_font($font_name);
+    if ($font_name eq '') {
+      # Fall back to default font
+      $use_ttf = 0;
+    }
+  }
+  
+print "Draw " . @chromosomes . " chromosomes.\n";
+  # draw chromosomes
+  my $chr = 0;
+  foreach my $record (@chromosomes) {
+    my ($chromosome, $source, $type, $start, $end, $score, $strand, $frame, 
+        $attrs) = @$record;
+    my %attributes = $self->_get_attributes($attrs);
+    
+    my $chr_len  = ($end - $start) * $scale_factor;
+    my $x1 = int($chrxloc->{$chromosome});
+    my $y1 = int($chryloc->{$chromosome});
+    my $x2 = int($x1 + $chrom_width);
+    my $y2 = int($y1 + $chr_len);
+    
+    # get color
+    my $chr_color = $def_chr_color;
+    if ($attributes{'color'}) {
+       $chr_color = $self->{clr_mgr}->get_color($im, $attributes{'color'});
+    }
+
+    # Draw chromosome
+    if ($show_strands == 0) {
+       $im->filledRectangle($x1, $y1, $x2, $y2, $chr_color);
+       $im->rectangle($x1, $y1, $x2, $y2, $chr_bdr_color);
+    }
+    else {
+       my $width = $chrom_width/2 - 2;
+       my $neg_strand 
+          = GD::Arrow::LeftHalf->new(-X1=>$x1+$width, -Y1=>$y1, 
+                                      -X2=>$x1+$width, -Y2=>$y2, 
+                                      -WIDTH=>$width);
+       $im->filledPolygon($neg_strand, $chr_color);
+       my $pos_strand
+          = GD::Arrow::LeftHalf->new(-X1=>$x2-$width, -Y1=>$y2, 
+                                      -X2=>$x2-$width, -Y2=>$y1, 
+                                      -WIDTH=>$width);
+       $im->filledPolygon($pos_strand, $chr_color);
+    }
+
+    # draw chromosome label
+    my $label = $self->{chrlabels}->{$chromosome};
+    if ($use_ttf) {
+      my ($str_width, $str_height)
+          = $self->{font_mgr}->get_text_dimension($font_face, $font_size, 
+                                                  $label_color, $label);
+      $im->stringFT($label_color, $font_face, $font_size,
+                    0,   # angle
+                    $x1 + $chrom_width/2 - $str_width/2,
+                    $y1 - 5,
+                    $label);
+    }
+    else {
+      $im->string($self->{font_mgr}->get_font(1), 
+                  $x1 + $chrom_width/2 - 3*length($label), # attempt centering
+                  $y1 - 20, 
+                  $label, 
+                  $label_color);
+    }
+    if ($show_strands) {
+      # show 3'/5' at both ends of each chromosome
+      my $tiny_font_face = $ini->val('general', 'tiny_font_face', '');
+      if ($tiny_font_face ne '') {
+        my $font_file = $self->{font_mgr}->find_font($tiny_font_face);
+        my $font_size = 6;
+        my ($str_width, $str_height)
+        = $self->{font_mgr}->get_text_dimension($font_file, $font_size, 
+                                                $label_color, "5'");
+        $im->stringFT($label_color,
+                      $font_file, $font_size, 0,
+                      $x1-$str_width, $y1, 
+                      "3'");
+        $im->stringFT($label_color,
+                      $font_file, $font_size, 0, 
+                      $x2, $y1, 
+                      "5'");
+        $im->stringFT($label_color,
+                      $font_file, $font_size, 0, 
+                      $x1-$str_width, $y2 + $str_height, 
+                      "5'");
+        $im->stringFT($label_color,
+                      $font_file, $font_size, 0, 
+                      $x2, $y2 + $str_height, 
+                      "3'");
+      }
+      else {
+        # fall back on built in font
+        $im->string($self->{font_mgr}->get_font(2)
+                    , $x1, $y1-10, "3'", 
+                    $label_color);
+        $im->string($self->{font_mgr}->get_font(2), 
+                    $x2-2, $y1-10, "5'", 
+                    $label_color);
+        $im->string($self->{font_mgr}->get_font(2), 
+                    $x1, $y2, "5'", 
+                    $label_color);
+        $im->string($self->{font_mgr}->get_font(2), 
+                    $x2-2, $y2, "3'", 
+                    $label_color);
+      }
+    }
+    
+    # Save feature coordinates
+#    $self->{feature_coords}->{$chromosome} 
+#              = "$chromosome,$start,$end,$x1,$y1,$x2,$y2";
+    my $line = "$chromosome,$chromosome,$start,$end,$x1,$y1,$x2,$y2";
+    push @{$self->{feature_coords}}, $line;
+
+    $chr++;
+  }#draw chr backgrounds
+
+  return $im;
+}#_draw_chromosomes
+
+
+###############
+# _draw_ruler()
+
+sub _draw_ruler {
+#TODO: ruler seems to be always starting at 0
+  my $self = $_[0];
+  
+  my $ini = $self->{ini};
+  my $tick_interval        = ($ini->val('general', 'tick_interval'));
+  my $tick_line_width      = int($ini->val('general', 'tick_line_width'));
+  my $minor_tick_divisions = int($ini->val('general', 'minor_tick_divisions'));
+  
+  my $im                   = $self->{im};
+  my $ruler_color_name     = $ini->val('general', 'ruler_color', 'gray60');
+  my $ruler_color          = $self->{clr_mgr}->get_color($im, $ruler_color_name);
+  my $font                 = int($ini->val('general', 'ruler_font', 1));
+  my $font_face            = $ini->val('general', 'ruler_font_face', '');
+  my $font_size            = int($ini->val('general', 'ruler_font_size', 0));
+
+  my $draw_right = ($self->{display_ruler} eq '1' 
+                      || $self->{display_ruler} eq 'R');
+  my $draw_left  = ($self->{display_ruler} eq '1' 
+                      || $self->{display_ruler} eq 'L');
+                      
+  my $use_ttf;
+  if ($font_face ne '' && $font_size != 0) {
+    $use_ttf = 1;
+    $font_face = $self->{font_mgr}->find_font($font_face);
+    if ($font_face eq '') {
+      # Fall back to default font
+      $use_ttf = 0;
+    }
+  }
+
+  # This many units represented by ruler
+  my $num_units = $self->{ruler_max} - $self->{ruler_min};
+
+  # Get length of ruler in pixels
+  my ($im_width, $im_height) = $im->getBounds();
+  my $ruler_len_pixels = $num_units * $self->{scale_factor};
+
+  # This many tick marks on ruler
+  my $num_of_ticks = int($num_units / $tick_interval);
+#print "Draw $num_of_ticks ticks from " . $self->{ruler_min} . " to " .$self->{ruler_max} . "\n";
+    
+  # Draw units label
+  my $units_label = $ini->val('general', 'ruler_units', 'kbp');
+  $units_label =~ s/^['\"](.*)['\"]$/$1/;
+  if ($draw_left) {
+    $im->string($self->{font_mgr}->get_font(1), 
+                5, 
+                $self->{chrbase} - 16, 
+                $units_label, 
+                $ruler_color);
+  }
+  if ($draw_right) {
+    my $str_width = $self->{font_mgr}->get_font_width(1) * length($units_label);
+    $im->string($self->{font_mgr}->get_font(1), 
+                $im_width - $str_width - 5, 
+                $self->{chrbase} - 16, 
+                $units_label, 
+                $ruler_color);
+  }
+
+  # Left scale starts here:
+  my $x_start = 5;
+
+  # Top of both scales:
+  my $y_start = $self->{chrbase};
+  
+  # draw scale backbone on both sides of image
+  if ($draw_left) {
+    $im->line($x_start, 
+              $y_start, 
+              $x_start, 
+              $ruler_len_pixels + $y_start, 
+              $ruler_color); 
+  }
+  if ($draw_right) {
+    $im->line($im_width-5, 
+              $y_start, 
+              $im_width-5, 
+              $ruler_len_pixels + $y_start, 
+              $ruler_color); 
+  }
+  
+  # draw tick marks
+  for my $i (0 .. $num_of_ticks) {
+    my $tick_pixels = $i * $tick_interval * $self->{scale_factor};
+    
+    # units might be reversed
+    my $tick_label;
+    if ($self->{reverse_ruler} == 1) {
+      $tick_label = $self->{ruler_max} 
+                    + $self->{ruler_min} - ($i * $tick_interval);
+    }
+    else {
+      $tick_label = $self->{ruler_min} + ($i * $tick_interval);
+    }
+    $tick_label = add_commas($tick_label);
+    
+    # major tick 
+    my $v_major = $tick_pixels + $self->{chrbase};
+  
+    # major tick marks
+    if ($draw_left) {
+      $im->line(5, 
+                $v_major, 
+                5 + $tick_line_width, 
+                $v_major, 
+                $ruler_color);
+    }
+    if ($draw_right) {
+      $im->line($im_width - 5, 
+                $v_major, 
+                $im_width - 5 - $tick_line_width, 
+                $v_major, 
+                $ruler_color);
+    }
+    
+    # minor tick marks left then right
+    for my $j (0 .. $minor_tick_divisions) {
+      my $v_minor = $v_major 
+                    + $j * $tick_interval 
+                    * $self->{scale_factor} / $minor_tick_divisions;
+      # stop if past end of chromosome
+      last if ($v_minor >= $self->{chrbase} + $ruler_len_pixels); 
+      if ($draw_left) {
+        $im->line(5,
+                  $v_minor, 
+                  5 + $tick_line_width/2, 
+                  $v_minor, 
+                  $ruler_color);
+      }
+      if ($draw_right) {
+        $im->line($im_width - 5, 
+                  $v_minor, 
+                  $im_width - 5 - $tick_line_width/2, 
+                  $v_minor, 
+                  $ruler_color);
+      }
+    }#minor tick marks
+    
+    # draw numbers at tick marks
+    if ($use_ttf) {
+        my ($str_width, $str_height)
+            = $self->{font_mgr}->get_text_dimension($font_face, $font_size, 
+                                                    $ruler_color, $tick_label);
+      if ($draw_left) {
+        $im->stringFT($ruler_color,
+                      $font_face, 
+                      $font_size,
+                      0,
+                      5 + 2 * $tick_line_width,
+                      $v_major + $str_height/3, 
+                      $tick_label);
+      }
+      if ($draw_right) {
+        $im->stringFT($ruler_color,
+                      $font_face, 
+                      $font_size,
+                      0,
+                      $im_width - 5 - $str_width - $tick_line_width,
+                      $v_major + $str_height/3, 
+                      $tick_label);
+      }
+     }
+     else {
+       my $str_height = $self->{font_mgr}->get_font_height($font);
+       my $str_width = length($tick_label) * $self->{font_mgr}->get_font_width($font);
+       if ($draw_left) {
+         $im->string($self->{font_mgr}->get_font($font), 
+                     5 + 2 * $tick_line_width, 
+                     $v_major - $str_height/2, 
+                     $tick_label, 
+                     $ruler_color);
+        }
+        if ($draw_right) {
+         $im->string($self->{font_mgr}->get_font($font), 
+                     $im_width - 5 - $str_width - $tick_line_width, 
+                     $v_major - $str_height/2, 
+                     $tick_label, 
+                     $ruler_color);
+        }
+     }
+  }#tick marks
+}#_draw_ruler
+
+
+######################
+# _parse_chromosomes()
+
+sub _parse_chromosomes { 
+  my ($self, $chromosomes_ref) = @_;
+  
+  my @chromosomes = @$chromosomes_ref;
+  
+  # number of chromosome:
+  $self->{num_chroms} = scalar @chromosomes;
+  
+  # Values in .ini file will be overridden if exceeded by chromosome start/end
+  my $ini = $self->{ini};
+  my $ruler_min = $ini->val('general', 'ruler_min', 0);
+  my $ruler_max = $ini->val('general', 'ruler_max', 0);
+
+  my (%chrlabels, @chrnames, @chrstarts);
+  # array of chromosome names and sizes in units:
+  foreach my $record (@chromosomes) {
+    my ($chromosome, $source, $type, $start, $end, $d1, $d2, $d3, $attrs) = @$record;
+    my %attributes = $self->_get_attributes($attrs);
+
+    my $label;
+    if ($attributes{'name'}) {
+      $label = $attributes{'name'};
+    }
+    elsif ($attributes{'id'}) {
+      $label = $attributes{'id'};
+    }
+    else {
+      $label = $chromosome;
+    }
+    $chrlabels{$chromosome} = _trim($label);
+
+    push @chrnames, $chromosome;
+    push @chrstarts, $start;
+    
+    if ($ruler_min > $start) {
+      $ruler_min = $start;
+    }
+    
+    if (!$ruler_max || $ruler_max < $end) {
+      $ruler_max = $end;
+    }
+  }#foreach chromosome
+  
+  $self->{ruler_min} = $ruler_min;
+  $self->{ruler_max} = $ruler_max;
+  $self->{chrnames}  = [@chrnames];
+  $self->{chrlabels} = \%chrlabels;
+  $self->{chrstarts} = [@chrstarts];
+}#_parse_chromosomes
+
+
+########
+# _trim
+
+sub _trim {
+	my $str = shift;
+	$str =~ s/^\s+//;
+	$str =~ s/\s+$//;
+	return $str;
+}
+
+
+###################
+# _get_attributes()
+
+sub _get_attributes {
+   my ($self, $attrs) = @_;
+   my @attribute_list = split /;/, $attrs;
+   return map { lc($self->_attr_key($_)) => $self->_attr_val($_) } @attribute_list;
+}#_get_attributes
+
+sub _attr_key {
+  my ($self, $keystr) = @_;
+  my @parts = split(/=/, $keystr);
+  return $parts[0];
+}
+sub _attr_val {
+  my ($self, $valstr) = @_;
+  my @parts = split(/=/, $valstr);
+  return $parts[1];
+}
+
+
+
+1;  # so that the require or use succeeds
