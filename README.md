@@ -8,3 +8,5 @@ To install and run this code locally you will need a webserver capable of servin
 
 For v3, you will also need to be able to execute perl if you want to use the visualization functionality. In addition to perl, you will need to install GD and the perl-GD bindings.
 
+There is a basic Dockerfile in this repo that might simplify running the code locally if you are familiar with docker.
+
